@@ -1,6 +1,6 @@
 ---
-title: "Bhopal Leaflet"
-author: "Divyansh Kulshreshtha"
+title: "Gwalior Leaflet"
+author: "Siddhant Bharadwaj"
 date: "16/10/2023"
 output: html_document
 ---
@@ -9,7 +9,7 @@ output: html_document
 library(leaflet)
 library(dplyr) # Load the dplyr package
 leaflet() %>%
-  setView(lng = 77.4126, lat = 23.2599, zoom = 13) %>%
+  setView(lng = 78.18283, lat = 26.2124, zoom = 13) %>%
   addTiles() %>%
-  addMarkers(lng = 77.4126, lat = 23.2599, popup = "Hello, this is Bhopal")
+  addMarkers(lng = 78.18283, lat = 26.2124,, popup = "Hello, this is Gwalior")
 ```
