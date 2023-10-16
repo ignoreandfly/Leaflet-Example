@@ -1,0 +1,15 @@
+---
+title: "Bhopal Leaflet"
+author: "Divyansh Kulshreshtha"
+date: "16/10/2023"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+library(dplyr) # Load the dplyr package
+leaflet() %>%
+  setView(lng = 77.4126, lat = 23.2599, zoom = 13) %>%
+  addTiles() %>%
+  addMarkers(lng = 77.4126, lat = 23.2599, popup = "Hello, this is Bhopal")
+```
